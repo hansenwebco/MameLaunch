@@ -99,6 +99,12 @@
     <Content Include="Resources\images\frogger-main.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\images\joust-main.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\images\mspacman-main.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\js\games.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

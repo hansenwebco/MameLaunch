@@ -55,6 +55,13 @@ namespace MameLaunch
                 wb.Document.GetElementById("btn-down").InvokeMember("click");
                  _skipOnce = true;
             }
+            else if (e.KeyValue == 13)
+            {
+                String romName = wb.Document.GetElementById("rom").GetAttribute("value");
+
+                LaunchMame(romName);
+                _skipOnce = true;
+            }
             
 
         }
@@ -72,12 +79,16 @@ namespace MameLaunch
         {
             HtmlElement elm = (HtmlElement)sender;
 
+          
+        }
+        public void LaunchMame(string romName)
+        {
             string mamePath = System.Configuration.ConfigurationManager.AppSettings["MamePath"].ToString();
 
             ProcessStartInfo Mame = new ProcessStartInfo(mamePath + "mame.exe");
             Mame.WorkingDirectory = "c:\\temp\\mame";
             Mame.WindowStyle = ProcessWindowStyle.Hidden;
-            Mame.Arguments = "mspacman.zip";
+            Mame.Arguments = romName;
             Process.Start(Mame);
         }
         private void LoadGames()

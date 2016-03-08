@@ -21,16 +21,19 @@
             </div>
             <div class="text-center col-md-6">
                 <p>
-                    <img class="game-image" src="images/donkeykong-main.jpg" />
+                    <img id="game-image" class="game-image img-round" src="images/donkeykong-main.jpg" />
                 </p>
                 <p>
                     Players: <span id="players"></span>
                     Publisher: <span id="publisher"></span>
                 </p>
                 <p>
-                    <input id="btn-down" onclick="return false;"  type="button" class="btn btn-primary" value="Down" />
-                    <input id="btn-up" onclick="return false;" type="button" class="btn btn-primary" value="Up" />
-                    <input id="btn-launch" type="button" class="btn btn-primary" value="Launch" />
+                    <div id="debug" style="display:none">
+                        <input id="btn-down" onclick="return false;" type="button" class="btn btn-primary" value="Down" />
+                        <input id="btn-up" onclick="return false;" type="button" class="btn btn-primary" value="Up" />
+                        <input id="btn-launch" type="button" class="btn btn-primary" value="Launch" />
+                    </div>
+                    <input id="rom" type="hidden" value="" />
                 </p>
             </div>
         </div>

@@ -30,7 +30,7 @@ $(function () {
 
 function LoadGames() {
     RenderGameList();
-    SetGame(currentGame);
+    
 }
 function RenderGameList() {
     var counter = 0;
@@ -43,9 +43,13 @@ function RenderGameList() {
         counter++;
 
     });
+
+    SetGame(currentGame);
 }
 
 function SetGame(gameid) {
     $("#players").text(games[gameid].players);
     $("#publisher").text(games[gameid].publisher);
+    $("#rom").val(games[gameid].rom);
+    $("#game-image").attr("src", "images/" + games[gameid].cover);
 }
