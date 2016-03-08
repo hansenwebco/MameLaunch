@@ -3,6 +3,7 @@
 $(function () {
     LoadGames();
 
+    // TODO : Clean up how this works, recreating each time isn't great
     $("#btn-down").click(function () {
 
         if (currentGame + 1 >= games.length)
@@ -14,7 +15,6 @@ $(function () {
         RenderGameList();
         
     });
-
     $("#btn-up").click(function () {
 
         if (currentGame - 1 < 0)
@@ -27,10 +27,8 @@ $(function () {
     });
 
 });
-
 function LoadGames() {
     RenderGameList();
-    
 }
 function RenderGameList() {
     var counter = 0;
@@ -43,7 +41,6 @@ function RenderGameList() {
         counter++;
 
     });
-
     SetGame(currentGame);
 }
 
