@@ -34,5 +34,24 @@
         "cover": "frogger-main.jpg",
         "rom": "frogger.zip",
         "desc": "AT SOME FAR-DISTANT TIME 2 fantastic gladiators meet and square off for battle. Each is mounted on a fanciful bird of prey (ostrich or stork) whose wings can carry it from the clifftops to the mouth of the abyss and hopefully back... or the bubbling lava below will increase it's toll."
+    },
+    {
+        "name": "Galaga",
+        "year": 1982,
+        "players": 2,
+        "publisher": "Williams, Inc.",
+        "cover": "frogger-main.jpg",
+        "rom": "galaga.zip",
+        "desc": "AT SOME FAR-DISTANT TIME 2 fantastic gladiators meet and square off for battle. Each is mounted on a fanciful bird of prey (ostrich or stork) whose wings can carry it from the clifftops to the mouth of the abyss and hopefully back... or the bubbling lava below will increase it's toll."
+    },
+    {
+        "name": "Time Pilot",
+        "year": 1982,
+        "players": 2,
+        "publisher": "Williams, Inc.",
+        "cover": "frogger-main.jpg",
+        "rom": "timeplt.zip",
+        "desc": "AT SOME FAR-DISTANT TIME 2 fantastic gladiators meet and square off for battle. Each is mounted on a fanciful bird of prey (ostrich or stork) whose wings can carry it from the clifftops to the mouth of the abyss and hopefully back... or the bubbling lava below will increase it's toll."
     }
+
 ]
