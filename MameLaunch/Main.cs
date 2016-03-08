@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -15,15 +17,20 @@ namespace MameLaunch
 {
     public partial class Main : Form
     {
+        private List<Game> _games;
         public Main()
         {
             InitializeComponent();
-            string curDir = Directory.GetCurrentDirectory();
 
+            LoadGames();
+
+            string curDir = Directory.GetCurrentDirectory();
             this.wb.Url = new Uri(String.Format("file:///{0}/resources/template-main.html", curDir));
+            
             wb.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(wb_DocumentCompleted);
             wb.PreviewKeyDown += new PreviewKeyDownEventHandler(wb_PreviewKeyDown);
         }
+
         private void wb_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             // exit on ESC key
@@ -32,7 +39,6 @@ namespace MameLaunch
         }
         private void wb_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-
 
             HtmlElement ele = wb.Document.GetElementById("launch");
             if (ele != null)
@@ -53,5 +59,14 @@ namespace MameLaunch
             Mame.Arguments = "mspacman.zip";
             Process.Start(Mame);
         }
+        private void LoadGames()
+        {
+            string curDir = Directory.GetCurrentDirectory();
+
+            string json = File.ReadAllText(curDir + "\\resources\\json\\games.json");
+            _games = JsonConvert.DeserializeObject<List<Game>>(json);
+
+        }
+
     }
 }

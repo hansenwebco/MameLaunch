@@ -1,0 +1,9 @@
+﻿$(function () {
+    LoadGames();
+});
+
+function LoadGames()
+{
+      
+}
+
