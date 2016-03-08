@@ -9,23 +9,29 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/jquery-2.2.1.min.js"></script>
+
     <script src="js/games.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
-
     <div class="container">
-        <br /><br />
-
         <div class="row">
-
             <div class="col-md-6 text-center">
-                <div id="gameslist"></div>
+                <ul id="gameslist"></ul>
             </div>
-            <div class="col-md-6">
-                <img src="images/donkeykong-main.jpg" class="img-rounded img-responsive" />
-                Players: 2
-                Publisher: Midway
+            <div class="text-center col-md-6">
+                <p>
+                    <img class="game-image" src="images/donkeykong-main.jpg" />
+                </p>
+                <p>
+                    Players: <span id="players"></span>
+                    Publisher: <span id="publisher"></span>
+                </p>
+                <p>
+                    <input id="btn-down" onclick="return false;"  type="button" class="btn btn-primary" value="Down" />
+                    <input id="btn-up" onclick="return false;" type="button" class="btn btn-primary" value="Up" />
+                    <input id="btn-launch" type="button" class="btn btn-primary" value="Launch" />
+                </p>
             </div>
         </div>
     </div>

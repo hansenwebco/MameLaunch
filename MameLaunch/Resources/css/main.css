@@ -1,10 +1,26 @@
-﻿body
-{
-   
+﻿body {
 }
 
 .desc p {
     font-family: "Lucida Console", Monaco, monospace;
-    color:limegreen;
-    font-size:14px;
+    color: limegreen;
+    font-size: 14px;
+}
+
+
+#gameslist {
+    margin-left: 0px;
+    list-style: none;
+    list-style-position: inside;
+    font-size: 24px;
+    padding-left: 0;
+}
+
+.selected {
+    background-color: yellow;
+    color: black;
+}
+
+.game-image {
+    width: 400px;
 }
