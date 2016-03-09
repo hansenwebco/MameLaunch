@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.wb = new System.Windows.Forms.WebBrowser();
+            this.timerMain = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // wb
@@ -40,6 +42,10 @@
             this.wb.ScrollBarsEnabled = false;
             this.wb.Size = new System.Drawing.Size(284, 262);
             this.wb.TabIndex = 0;
+            // 
+            // timerMain
+            // 
+            this.timerMain.Tick += new System.EventHandler(this.timerMain_Tick);
             // 
             // Main
             // 
@@ -58,6 +64,7 @@
         #endregion
 
         private System.Windows.Forms.WebBrowser wb;
+        private System.Windows.Forms.Timer timerMain;
     }
 }
 
