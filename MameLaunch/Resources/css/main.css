@@ -1,4 +1,9 @@
-﻿body {
+﻿@font-face {
+    font-family: 'minecraft-e'; /*a name to be used later*/
+    src: url('../fonts/mincraft.ttf'); /*URL to font*/
+}
+
+body {
     padding: 100px;
 }
 
@@ -12,19 +17,62 @@
     margin-left: 0px;
     list-style: none;
     list-style-position: inside;
-    font-size: 24px;
+    font-size: 28px;
     padding-left: 0;
+    font-family:minecraft-e;
+    text-transform:uppercase;
+    color:white;
+    line-height:48px;
+}
+
+#game-name 
+{
+     font-family:minecraft-e;
+    text-transform:uppercase;
+    font-size:36px;
+    color:#cc9b00;
+      margin-top:60px;
 }
 
 .selected {
-    background-color: yellow;
-    color: black;
+  
 }
 
 .game-image {
+  
     width: 400px;
 }
 
+#game-preview{
+    position:relative;
+    width:601px;
+    height:663px;
+    display:block;
+}
+
+#game-preview-img
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:block;
+}
+#game-preview-frame
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:2;
+    display:block;
+}
 .games-container {
 
+}
+
+.alien {
+	
+	padding-bottom:35px;
+}
+.header-image {
+	padding-bottom:85px;
 }

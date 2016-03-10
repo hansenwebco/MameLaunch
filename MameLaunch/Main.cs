@@ -30,6 +30,7 @@ namespace MameLaunch
 
         public Main()
         {
+
             InitializeComponent();
             string curDir = Directory.GetCurrentDirectory();
             wb.Url = new Uri(String.Format("file:///{0}/resources/template-main.html", curDir));

@@ -1,5 +1,14 @@
 ﻿var games = [
     {
+        "name": "Ms Pacman",
+        "year": 1981,
+        "players": 2,
+        "publisher": "Midway Games",
+        "cover": "mspacman-preview.png",
+        "rom": "mspacman.zip",
+        "desc": "The gameplay of Ms. Pac-Man is identical to the original Pac-Man. The player earns points by eating pellets and avoiding ghosts (contact with one causes Ms. Pac-Man to lose a life). Eating an energizer (or \"power pellet\") causes the ghosts to turn blue, allowing them to be eaten for extra points. Bonus fruits can be eaten for increasing point values, twice per round. As the rounds increase, the speed increases, and energizers generally lessen the extent of the ghosts' vulnerability, eventually stopping altogether."
+    },
+    {
         "name": "Donkey Kong",
         "year": 1981,
         "players": 2,
