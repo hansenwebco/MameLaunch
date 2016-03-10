@@ -37,7 +37,7 @@ function RenderGameList() {
             $("#gameslist").append('<li class=selected>' + value.name + '</li>');
         else
             $("#gameslist").append('<li>' + value.name + '</li>');
-
+            
         counter++;
 
     });
@@ -45,8 +45,11 @@ function RenderGameList() {
 }
 
 function SetGame(gameid) {
-    $("#players").text(games[gameid].players);
-    $("#publisher").text(games[gameid].publisher);
+    $("#game-name").text(games[gameid].name);
+    $("#game-desc").text(games[gameid].desc);
+    $("#game-players").text(games[gameid].players);
+    $("#game-publisher").text(games[gameid].publisher);
+    $("#game-year").text(games[gameid].year);
     $("#rom").val(games[gameid].rom);
     $("#game-image").attr("src", "images/" + games[gameid].cover);
 }

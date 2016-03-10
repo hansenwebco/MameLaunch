@@ -124,6 +124,7 @@
     <Content Include="Resources\images\preview-frame.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\images\selected-game.png" />
     <Content Include="Resources\js\games.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

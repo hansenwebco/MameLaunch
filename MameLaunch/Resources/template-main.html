@@ -14,36 +14,42 @@
 <body>
     <div class="container">
         <div class="row">
-			<div class="col-md-12">
-				<img class="alien" src="images/alien1.gif">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<img class="header-image" src="images/markcade.png">
-			</div>
-		</div>		
-		<div class="row">
-            <div class="col-md-6  games-container">
+            <div class="col-md-offset-1 col-md-11">
+                <img class="alien" src="images/alien1.gif">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-1  col-md-11">
+                <img class="header-image" src="images/markcade.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-1 col-md-4  games-container">
                 <ul id="gameslist"></ul>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-7 preview-container">
                 <p>
-                    
+
                     <div id="game-preview">
                         <div id="game-preview-img">
                             <img id="game-image" src="images/mspacman-preview.png" />
                         </div>
-                        <img  id="game-preview-frame" src="images/preview-frame.png" />
+                        <img id="game-preview-frame" src="images/preview-frame.png" />
                     </div>
-                    
+
                 </p>
                 <p>
-                    <div id="game-name">GAME NAME</div>
+                    <div id="game-name"></div>
                 </p>
                 <p>
-                    Players: <span id="players"></span>
-                    Publisher: <span id="publisher"></span>
+                    <div id="game-desc"></div>
+                </p>
+                <p>
+                    <div id="game-details">
+                        Year: <span id="game-year"></span><br />
+                        Publisher: <span id="game-publisher"></span><br />
+                        Players: <span id="game-players"></span><br />
+                    </div>
                 </p>
                 <p>
                     <div id="debug" style="display:block">

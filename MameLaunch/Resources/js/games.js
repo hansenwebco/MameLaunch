@@ -1,6 +1,6 @@
 ﻿var games = [
     {
-        "name": "Ms Pacman",
+        "name": "Ms. Pacman",
         "year": 1981,
         "players": 2,
         "publisher": "Midway Games",

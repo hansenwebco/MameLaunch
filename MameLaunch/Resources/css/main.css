@@ -19,60 +19,75 @@ body {
     list-style-position: inside;
     font-size: 28px;
     padding-left: 0;
-    font-family:minecraft-e;
-    text-transform:uppercase;
-    color:white;
-    line-height:48px;
+    font-family: minecraft-e;
+    text-transform: uppercase;
+    color: white;
+    line-height: 48px;
 }
 
-#game-name 
-{
-     font-family:minecraft-e;
-    text-transform:uppercase;
-    font-size:36px;
-    color:#cc9b00;
-      margin-top:60px;
+#game-name {
+    font-family: minecraft-e;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #cc9b00;
+    margin-top: 60px;
 }
 
 .selected {
-  
+    background: url('../images/selected-game.png') no-repeat left 7px;
+    padding-left: 45px;
+    margin-left: -45px;
+    color: #cc9b00;
 }
 
 .game-image {
-  
     width: 400px;
 }
 
-#game-preview{
-    position:relative;
-    width:601px;
-    height:663px;
-    display:block;
+#game-preview {
+    position: relative;
+    width: 601px;
+    height: 663px;
+    display: block;
 }
 
-#game-preview-img
-{
-    position:absolute;
-    top:0px;
-    left:0px;
-    display:block;
+#game-preview-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
 }
-#game-preview-frame
-{
-    position:absolute;
-    top:0px;
-    left:0px;
-    z-index:2;
-    display:block;
+
+#game-preview-frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    display: block;
 }
+
+#game-details {
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 44px;
+    color: #cc9b00;
+    font-family: minecraft-e;
+    text-transform: uppercase;
+}
+
+#game-desc {
+    font-family: minecraft-e;
+    font-size: 18px;
+   width:90%;
+}
+
 .games-container {
-
 }
 
 .alien {
-	
-	padding-bottom:35px;
+    padding-bottom: 35px;
 }
+
 .header-image {
-	padding-bottom:85px;
+    padding-bottom: 85px;
 }
