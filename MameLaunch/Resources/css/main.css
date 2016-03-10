@@ -7,6 +7,11 @@ body {
     padding: 100px;
 }
 
+.alien
+{
+    margin-right:20px;
+}
+
 .desc p {
     font-family: "Lucida Console", Monaco, monospace;
     color: limegreen;

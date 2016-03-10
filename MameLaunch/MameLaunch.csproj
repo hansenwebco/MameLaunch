@@ -103,6 +103,12 @@
     <Content Include="Resources\images\alien1.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\images\alien2.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\images\alien3.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\images\donkeykong-main.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
