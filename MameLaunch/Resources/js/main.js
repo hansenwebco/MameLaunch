@@ -28,6 +28,12 @@ $(function () {
 
 });
 function LoadGames() {
+
+    // sort
+    games = games.sort(function (a, b) {
+        return a.name.localeCompare(b.name);
+    });
+    console.log(games);
     RenderGameList();
 }
 function RenderGameList() {
