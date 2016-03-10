@@ -3,6 +3,12 @@
 $(function () {
     LoadGames();
 
+    $("#alien1").css("position", "absolute").animate({ "left": "200px" }, "slow");
+    $("#alien2").css("position", "absolute").animate({ "left": "200px" }, "slow");
+    $("#alien3").css("position", "absolute").animate({ "left": "200px" }, "slow");
+    
+
+
     // TODO : Clean up how this works, recreating each time isn't great
     $("#btn-down").click(function () {
 
@@ -59,3 +65,4 @@ function SetGame(gameid) {
     $("#rom").val(games[gameid].rom);
     $("#game-image").attr("src", "images/" + games[gameid].cover);
 }
+

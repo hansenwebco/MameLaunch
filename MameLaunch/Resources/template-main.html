@@ -3,7 +3,6 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
     <title>MameLaunch</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -14,31 +13,31 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-offset-1 col-md-11">
-                <img class="alien" src="images/alien1.gif">
-                <img class="alien" src="images/alien2.gif">
-                <img class="alien" src="images/alien3.gif">
+            <div class="col-md-12">
+                <div id="aliens">
+                    <img class="alien" src="images/alien1.gif">
+                    <img class="alien" src="images/alien2.gif">
+                    <img class="alien" src="images/alien3.gif">
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-offset-1  col-md-11">
-                <img class="header-image" src="images/markcade.png">
+            <div class="col-md-12">
+                <img class="header-image img-responsive" src="images/markcade.png">
             </div>
         </div>
         <div class="row">
-            <div class="col-md-offset-1 col-md-4  games-container">
+            <div class="col-md-4  games-container">
                 <ul id="gameslist"></ul>
             </div>
             <div class="col-md-7 preview-container">
                 <p>
-
                     <div id="game-preview">
                         <div id="game-preview-img">
                             <img id="game-image" src="images/mspacman-preview.png" />
                         </div>
                         <img id="game-preview-frame" src="images/preview-frame.png" />
                     </div>
-
                 </p>
                 <p>
                     <div id="game-name"></div>
@@ -54,7 +53,7 @@
                     </div>
                 </p>
                 <p>
-                    <div id="debug" style="display:block">
+                    <div id="debug" style="display:none;">
                         <input id="btn-down" onclick="return false;" type="button" class="btn btn-primary" value="Down" />
                         <input id="btn-up" onclick="return false;" type="button" class="btn btn-primary" value="Up" />
                         <input id="btn-launch" type="button" class="btn btn-primary" value="Launch" />
