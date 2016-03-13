@@ -53,6 +53,24 @@
         "cover": "timepilot-preview.png",
         "rom": "timeplt.zip",
         "desc": "AT SOME FAR-DISTANT TIME 2 fantastic gladiators meet and square off for battle. Each is mounted on a fanciful bird of prey (ostrich or stork) whose wings can carry it from the clifftops to the mouth of the abyss and hopefully back... or the bubbling lava below will increase it's toll."
+    },
+    {
+        "name": "Tapper",
+        "year": 1983,
+        "players": 2,
+        "publisher": "Bally Midway",
+        "cover": "tapper-preview.png",
+        "rom": "tapper.zip",
+        "desc": "The Tapper game screen features four bars. Patrons arrive periodically at the end of the bar opposite the player and demand drinks. The player must draw and serve drinks to the patrons as they slowly advance towards the player. If any customers reach the player's end of the bar, they grab the player-as-bartender and toss him out the far end of the bar, costing the player a life."
+    },
+    {
+        "name": "U.N. Squadron",
+        "year": 1989,
+        "players": 2,
+        "publisher": "Capcom",
+        "cover": "unsquad-preview.png",
+        "rom": "unsquad.zip",
+        "desc": "U.N. Squadron is a 1989 side-scrolling shooting game released by Capcom for the CPS arcade hardware and for the Super Nintendo Entertainment System. The game was released in Japan as Area 88 (Japanese: エリア88 Hepburn: Eria Hachi-Jū-Hachi?) and is based on the manga series of the same name, featuring the same main characters. Here, their mission is to stop a terrorist group known as Project 4. It was followed by the sequel Carrier Air Wing."
     }
 
 ]
