@@ -163,9 +163,6 @@
     <Content Include="Resources\js\main.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\template-game.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Resources\template-main.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

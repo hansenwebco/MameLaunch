@@ -5,13 +5,11 @@
 
 body {
     padding: 50px;
-    padding-top:100px;
+    padding-top: 100px;
 }
 
-.alien
-{
-    margin-right:20px;
-
+.alien {
+    margin-right: 20px;
 }
 
 .desc p {
@@ -85,7 +83,7 @@ body {
 #game-desc {
     font-family: minecraft-e;
     font-size: 18px;
-   width:90%;
+    width: 90%;
 }
 
 .games-container {
