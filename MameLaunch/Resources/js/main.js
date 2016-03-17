@@ -1,15 +1,13 @@
 ﻿var currentGame = 0;
-
 $(function () {
+    
     LoadGames();
 
+    // TODO: Not yet working
     $("#alien1").css("position", "absolute").animate({ "left": "200px" }, "slow");
     $("#alien2").css("position", "absolute").animate({ "left": "200px" }, "slow");
     $("#alien3").css("position", "absolute").animate({ "left": "200px" }, "slow");
-    
 
-
-    // TODO : Clean up how this works, recreating each time isn't great
     $("#btn-down").click(function () {
 
         if (currentGame + 1 >= games.length)
@@ -17,10 +15,10 @@ $(function () {
         else
             currentGame++;
       
-        $("#gameslist").empty();
-        RenderGameList();
+        DrawGameMarker(currentGame);
         
     });
+
     $("#btn-up").click(function () {
 
         if (currentGame - 1 < 0)
@@ -28,32 +26,37 @@ $(function () {
         else
             currentGame--;
 
-        $("#gameslist").empty();
-        RenderGameList();
+        DrawGameMarker(currentGame);
     });
 
 });
+
 function LoadGames() {
 
-    // sort
     games = games.sort(function (a, b) {
         return a.name.localeCompare(b.name);
     });
-    console.log(games);
+
     RenderGameList();
 }
+
 function RenderGameList() {
     var counter = 0;
     $.each(games, function (key, value) {
         if (currentGame == counter)
-            $("#gameslist").append('<li class=selected>' + value.name + '</li>');
-        else
-            $("#gameslist").append('<li>' + value.name + '</li>');
+            $("#gameslist").append($('<li/>', { text: value.name, "id": "game" + counter , "class": "selected" }));
+        else 
+            $("#gameslist").append($('<li/>', { text: value.name, "id": "game" + counter}));
             
         counter++;
-
     });
     SetGame(currentGame);
+}
+
+function DrawGameMarker(selectedGame) {
+    $('[id^="game"]').removeClass("selected");
+    $("#game" + selectedGame).addClass("selected");
+    SetGame(selectedGame);
 }
 
 function SetGame(gameid) {
@@ -62,7 +65,7 @@ function SetGame(gameid) {
     $("#game-players").text(games[gameid].players);
     $("#game-publisher").text(games[gameid].publisher);
     $("#game-year").text(games[gameid].year);
-    $("#rom").val(games[gameid].rom);
     $("#game-image").attr("src", "images/" + games[gameid].cover);
+    $("#rom").val(games[gameid].rom);
 }
 
