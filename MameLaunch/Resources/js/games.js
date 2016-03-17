@@ -25,7 +25,7 @@
         "publisher": "Williams, Inc.",
         "cover": "joust-preview2.png",
         "rom": "joust.zip",
-        "desc": "AT SOME FAR-DISTANT TIME 2 fantastic gladiators meet and square off for battle. Each is mounted on a fanciful bird of prey (ostrich or stork) whose wings can carry it from the clifftops to the mouth of the abyss and hopefully back... or the bubbling lava below will increase it's toll."
+        "desc": "At some far-distant time 2 fantastic gladiators meet and square off for battle. Each is mounted on a fanciful bird of prey (ostrich or stork) whose wings can carry it from the clifftops to the mouth of the abyss and hopefully back... or the bubbling lava below will increase it's toll."
     },
     {
         "name": "Frogger",
@@ -43,7 +43,7 @@
         "publisher": "Williams, Inc.",
         "cover": "galaga-preview.png",
         "rom": "galaga.zip",
-        "desc": "AT SOME FAR-DISTANT TIME 2 fantastic gladiators meet and square off for battle. Each is mounted on a fanciful bird of prey (ostrich or stork) whose wings can carry it from the clifftops to the mouth of the abyss and hopefully back... or the bubbling lava below will increase it's toll."
+        "desc": "Galaga is a fixed shooter arcade game developed and published by Namco in Japan and published by Midway in North America in 1981. It is the sequel to Galaxian, released in 1979."
     },
     {
         "name": "Time Pilot",
@@ -52,7 +52,7 @@
         "publisher": "Williams, Inc.",
         "cover": "timepilot-preview.png",
         "rom": "timeplt.zip",
-        "desc": "AT SOME FAR-DISTANT TIME 2 fantastic gladiators meet and square off for battle. Each is mounted on a fanciful bird of prey (ostrich or stork) whose wings can carry it from the clifftops to the mouth of the abyss and hopefully back... or the bubbling lava below will increase it's toll."
+        "desc": "Time Pilot is a multi-directional scrolling shooter and free-roaming aerial combat arcade game designed by Yoshiki Okamoto, released by Konami in 1982, and distributed in the United States by Centuri."
     },
     {
         "name": "Tapper",
@@ -61,7 +61,7 @@
         "publisher": "Bally Midway",
         "cover": "tapper-preview.png",
         "rom": "tapper.zip",
-        "desc": "The Tapper game screen features four bars. Patrons arrive periodically at the end of the bar opposite the player and demand drinks. The player must draw and serve drinks to the patrons as they slowly advance towards the player. If any customers reach the player's end of the bar, they grab the player-as-bartender and toss him out the far end of the bar, costing the player a life."
+        "desc": "Tapper, also known as Root Beer Tapper, is a 1983 arcade game released by Bally Midway. The goal of the game is to serve beer and collect empty mugs and tips."
     },
     {
         "name": "U.N. Squadron",
