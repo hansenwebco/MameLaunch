@@ -54,33 +54,34 @@ namespace MameLaunch
                 return;
             }
 
-            // exit on ESC key 
-            // TODO: CASE This
-            if (e.KeyValue == 27)
-                Application.Exit();
-            else if (e.KeyValue == 38)
+            switch (e.KeyValue)
             {
-                wb.Document.GetElementById("btn-up").InvokeMember("click");
-                _skipOnce = true;
+                case 27:  // esc
+                    Application.Exit();
+                    break;
+                case 38: // up arrow
+                    wb.Document.GetElementById("btn-up").InvokeMember("click");
+                    _skipOnce = true;
+                    break;
+                case 40: // down arrow
+                    wb.Document.GetElementById("btn-down").InvokeMember("click");
+                    _skipOnce = true;
+                    break;
+                case 13: // enter key
+                    LaunchMame();
+                    _skipOnce = true;
+                    break;
+                default:
+                    break;
             }
-            else if (e.KeyValue == 40)
-            {
-                wb.Document.GetElementById("btn-down").InvokeMember("click");
-                _skipOnce = true;
-            }
-            else if (e.KeyValue == 13)
-            {
-              
-                LaunchMame();
-                _skipOnce = true;
-            }
+
         }
         public void LaunchMame()
         {
             string romName = wb.Document.GetElementById("rom").GetAttribute("value");
             string mamePath = System.Configuration.ConfigurationManager.AppSettings["MamePath"].ToString();
             ProcessStartInfo Mame = new ProcessStartInfo(mamePath + "mame.exe");
-            Mame.WorkingDirectory = "c:\\temp\\mame";
+            Mame.WorkingDirectory = mamePath;
             Mame.WindowStyle = ProcessWindowStyle.Hidden;
             Mame.Arguments = romName;
             Process.Start(Mame);
@@ -109,7 +110,7 @@ namespace MameLaunch
                 {
                     // TODO : Swallow?
                 }
-            } 
+            }
             return sticks.ToArray();
         }
 
@@ -129,7 +130,7 @@ namespace MameLaunch
 
                 if (yValue < -1)
                     wb.Document.GetElementById("btn-up").InvokeMember("click");
-                
+
                 if (yValue > 0)
                     wb.Document.GetElementById("btn-down").InvokeMember("click");
 
@@ -140,7 +141,7 @@ namespace MameLaunch
 
                 if (buttons[1])
                 {
-                    // ... more stuff here
+                    // ... handle other buttons if needed
                 }
             }
 
