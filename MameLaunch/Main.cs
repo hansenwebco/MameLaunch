@@ -68,6 +68,7 @@ namespace MameLaunch
                     _skipOnce = true;
                     break;
                 case 13: // enter key
+                    wb.Document.InvokeScript("PlayLaunch");
                     LaunchMame();
                     _skipOnce = true;
                     break;

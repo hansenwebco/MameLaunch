@@ -55,13 +55,16 @@ function RenderGameList() {
     SetGame(currentGame);
 }
 
+function PlayLaunch() {
+    // called from
+    PlaySound(launch);
+}
+
 function PlaySound(snd) {
     snd.pause();
     snd.currentTime = 0;
     snd.play();
 }
-
-
 function DrawGameMarker(selectedGame) {
     PlaySound(beep);
 
