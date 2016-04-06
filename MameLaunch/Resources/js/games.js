@@ -17,7 +17,6 @@
         "cover": "donkeykong-preview.png",
         "desc": "Donkey Kong is an arcade game released by Nintendo in 1981. It is an early example of the platform game genre, as the gameplay focuses on maneuvering the main character across a series of platforms while dodging and jumping over obstacles."
     },
-
     {
         "name": "Joust",
         "year": 1982,
@@ -71,6 +70,41 @@
         "cover": "unsquad-preview.png",
         "rom": "unsquad.zip",
         "desc": "U.N. Squadron is a 1989 side-scrolling shooting game released by Capcom for the CPS arcade hardware and for the Super Nintendo Entertainment System. The game was released in Japan as Area 88 (Japanese: エリア88 Hepburn: Eria Hachi-Jū-Hachi?) and is based on the manga series of the same name, featuring the same main characters. Here, their mission is to stop a terrorist group known as Project 4. It was followed by the sequel Carrier Air Wing."
+    },
+    {
+        "name": "Pacman",
+        "year": 1980,
+        "players": 2,
+        "publisher": "Namco",
+        "cover": "pacman-preview.png",
+        "rom": "",
+        "desc": "Pac-Man is an arcade game developed by Namco and first released in Japan on May 22, 1980. It was created by Japanese video game designer Toru Iwatani. It was licensed for distribution in the United States by Midway and released in October 1980."
+    },
+    {
+        "name": "Spy Hunter",
+        "year": 1983,
+        "players": 2,
+        "publisher": "Bally Midway",
+        "cover": "spyhunter-preview.png",
+        "rom": "",
+        "desc": "Spy Hunter is a 1983 arcade game developed and released by Bally Midway.  The game draws inspiration from the James Bond films and was originally supposed to carry the James Bond license. The object of the game is to drive down roads in the technologically advanced \"Interceptor\" car and destroy various enemy vehicles with a variety of onboard weapons."
+    },
+    {
+        "name": "Space Invaders",
+        "year": 1978,
+        "players": 2,
+        "publisher": "Taito Corporation",
+        "cover": "spaceinvaders-preview.png",
+        "rom": "",
+        "desc": "Space Invaders is an arcade video game created by Tomohiro Nishikado and released in 1978. It was originally manufactured and sold by Taito in Japan, and was later licensed for production in the United States by the Midway division of Bally."
+    },
+    {
+        "name": "Galaxian",
+        "year": 1979,
+        "players": 2,
+        "publisher": "Namco",
+        "cover": "galaxian-preview.png",
+        "rom": "",
+        "desc": "A fixed shooter game in which the player controls a spaceship at the bottom of the screen, and shoots enemies descending in various directions, it was designed to compete with Taito Corporation's successful earlier game Space Invaders (which was released in the previous year, and also imported to the US by Midway Games)."
     }
-
 ]
