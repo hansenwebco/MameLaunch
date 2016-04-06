@@ -1,7 +1,9 @@
 ﻿var currentGame = 0;
+var beep = new Audio("sounds/poka01.mp3");
+var launch = new Audio("sounds/powerup05.mp3");
 $(function () {
-    
-    LoadGames();
+
+     LoadGames();
 
     // TODO: Not yet working
     $("#alien1").css("position", "absolute").animate({ "left": "200px" }, "slow");
@@ -14,15 +16,15 @@ $(function () {
             currentGame = 0;
         else
             currentGame++;
-      
+
         DrawGameMarker(currentGame);
-        
+
     });
 
     $("#btn-up").click(function () {
 
         if (currentGame - 1 < 0)
-            currentGame = games.length-1;
+            currentGame = games.length - 1;
         else
             currentGame--;
 
@@ -44,16 +46,25 @@ function RenderGameList() {
     var counter = 0;
     $.each(games, function (key, value) {
         if (currentGame == counter)
-            $("#gameslist").append($('<li/>', { text: value.name, "id": "game" + counter , "class": "selected" }));
-        else 
-            $("#gameslist").append($('<li/>', { text: value.name, "id": "game" + counter}));
-            
+            $("#gameslist").append($('<li/>', { text: value.name, "id": "game" + counter, "class": "selected" }));
+        else
+            $("#gameslist").append($('<li/>', { text: value.name, "id": "game" + counter }));
+
         counter++;
     });
     SetGame(currentGame);
 }
 
+function PlaySound(snd) {
+    snd.pause();
+    snd.currentTime = 0;
+    snd.play();
+}
+
+
 function DrawGameMarker(selectedGame) {
+    PlaySound(beep);
+
     $('[id^="game"]').removeClass("selected");
     $("#game" + selectedGame).addClass("selected");
     SetGame(selectedGame);

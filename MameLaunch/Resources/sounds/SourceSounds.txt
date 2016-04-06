@@ -1,0 +1,6 @@
+﻿
+select06.mp3 
+from: 
+http://taira-komori.jpn.org/freesounden.html
+http://taira-komori.jpn.org/game01en.html
+
