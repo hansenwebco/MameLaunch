@@ -33,7 +33,8 @@ namespace MameLaunch
 
             InitializeComponent();
             string curDir = Directory.GetCurrentDirectory();
-            wb.Url = new Uri(String.Format("file:///{0}/resources/template-main.html", curDir));
+            string templatePath = System.Configuration.ConfigurationManager.AppSettings["SkinRootPage"].ToString();
+            wb.Url = new Uri(String.Format("file:///{0}/resources/" + templatePath , curDir));
 
             wb.PreviewKeyDown += new PreviewKeyDownEventHandler(wb_PreviewKeyDown);
 

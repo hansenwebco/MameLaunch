@@ -3,7 +3,7 @@ var beep = new Audio("sounds/poka01.mp3");
 var launch = new Audio("sounds/powerup05.mp3");
 $(function () {
 
-     LoadGames();
+    LoadGames();
 
     // TODO: Not yet working
     $("#alien1").css("position", "absolute").animate({ "left": "200px" }, "slow");
