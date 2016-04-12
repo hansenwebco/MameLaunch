@@ -95,7 +95,7 @@
         "players": 2,
         "publisher": "Taito Corporation",
         "cover": "spaceinvaders-preview.png",
-        "rom": "",
+        "rom": "invaders.zip",
         "desc": "Space Invaders is an arcade video game created by Tomohiro Nishikado and released in 1978. It was originally manufactured and sold by Taito in Japan, and was later licensed for production in the United States by the Midway division of Bally."
     },
     {
@@ -104,7 +104,16 @@
         "players": 2,
         "publisher": "Namco",
         "cover": "galaxian-preview.png",
-        "rom": "",
+        "rom": "galaxian.zip",
         "desc": "A fixed shooter game in which the player controls a spaceship at the bottom of the screen, and shoots enemies descending in various directions, it was designed to compete with Taito Corporation's successful earlier game Space Invaders (which was released in the previous year, and also imported to the US by Midway Games)."
+    },
+    {
+        "name": "Elevator Action",
+        "year": 1983,
+        "players": 2,
+        "publisher": "Taito Corporation",
+        "cover": "tapper-preview.png",
+        "rom": "elevator.zip",
+        "desc": "The player assumes the role of a spy infiltrating a 30-story building filled with elevators. The player is pursued by enemy agents who appear from behind closed doors. These agents must be dealt with via force or evasion. Successful completion of a level involves collecting all the secret documents and traversing the building from top to bottom."
     }
 ]
