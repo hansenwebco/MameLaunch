@@ -12,3 +12,5 @@ Here's a video of a demo running the current configuration:
 https://www.youtube.com/watch?v=ZlNFsc7BAj4
 
 The majority of the code can be found in the Recsoures/UI folder and is pretty straight forward JavaScript and CSS.
+
+The application does support basic USB controls but it has not been fleshed out yet to make it easily configurable.
