@@ -32,6 +32,9 @@ namespace MameLaunch
         {
 
             InitializeComponent();
+
+            Cursor.Hide();
+
             string curDir = Directory.GetCurrentDirectory();
             string templatePath = System.Configuration.ConfigurationManager.AppSettings["SkinRootPage"].ToString();
             wb.Url = new Uri(String.Format("file:///{0}/resources/" + templatePath , curDir));

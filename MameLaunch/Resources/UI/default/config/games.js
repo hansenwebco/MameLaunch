@@ -77,7 +77,7 @@
         "players": 2,
         "publisher": "Namco",
         "cover": "pacman-preview.png",
-        "rom": "",
+        "rom": "pacman.zip",
         "desc": "Pac-Man is an arcade game developed by Namco and first released in Japan on May 22, 1980. It was created by Japanese video game designer Toru Iwatani. It was licensed for distribution in the United States by Midway and released in October 1980."
     },
     {
@@ -86,7 +86,7 @@
         "players": 2,
         "publisher": "Bally Midway",
         "cover": "spyhunter-preview.png",
-        "rom": "",
+        "rom": "spyhunt.zip",
         "desc": "Spy Hunter is a 1983 arcade game developed and released by Bally Midway.  The game draws inspiration from the James Bond films and was originally supposed to carry the James Bond license. The object of the game is to drive down roads in the technologically advanced \"Interceptor\" car and destroy various enemy vehicles with a variety of onboard weapons."
     },
     {
@@ -115,5 +115,44 @@
         "cover": "tapper-preview.png",
         "rom": "elevator.zip",
         "desc": "The player assumes the role of a spy infiltrating a 30-story building filled with elevators. The player is pursued by enemy agents who appear from behind closed doors. These agents must be dealt with via force or evasion. Successful completion of a level involves collecting all the secret documents and traversing the building from top to bottom."
+    },
+
+    {
+        "name": "Moon Patrol",
+        "year": 1983,
+        "players": 2,
+        "publisher": "Irem",
+        "cover": "moonpatrol-preview.png",
+        "rom": "mpatrol.zip",
+        "desc": "The player takes the role of a Luna City police officer assigned to Sector Nine, the home of the \"toughest thugs in the galaxy\". The player controls a moon buggy that travels over the moon's surface, viewing it from the side as it moves towards the right side of the screen."
+    },
+    {
+        "name": "Gyruss",
+        "year": 1983,
+        "players": 2,
+        "publisher": "Bally Midway",
+        "cover": "gyruss-preview.png",
+        "rom": "gyruss.zip",
+        "desc": "Spy Hunter is a 1983 arcade game developed and released by Bally Midway.  The game draws inspiration from the James Bond films and was originally supposed to carry the James Bond license. The object of the game is to drive down roads in the technologically advanced \"Interceptor\" car and destroy various enemy vehicles with a variety of onboard weapons."
+    },
+    {
+        "name": "Punch Out",
+        "year": 1983,
+        "players": 1,
+        "publisher": "Nintendo",
+        "cover": "punchout-preview.png",
+        "rom": "punchout.zip",
+        "desc": "In the game, the player assumes the role of a green-haired boxer (later known as Little Mac from the NES versions), known by three initials the player chooses when the game begins. During matches, the player's boxer is viewed from behind as a wireframe so the opponents can be seen."
+    }, 
+    {
+        "name": "NBA Jam TE",
+        "year": 1993,
+        "players": 1,
+        "publisher": "Miday",
+        "cover": "preview.png",
+        "rom": "nbajamte.zip",
+        "desc": "NBA Jam, which featured 2-on-2 basketball, is one of the first real playable basketball arcade games, and is also one of the first sports games to feature NBA-licensed teams and players, and their real digitized likenesses.  A key feature of NBA Jam is the exaggerated nature of the play - players jump many times their own height, making slam dunks that defy both human capabilities and the laws of physics"
     }
+
+
 ]
