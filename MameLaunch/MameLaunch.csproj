@@ -83,7 +83,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Resources\UI\default\fonts\mincraft.ttf">
+    <None Include="Resources\theme\default\fonts\mincraft.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -94,85 +94,85 @@
     <Content Include="Resources\css\bootstrap.min.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\css\main.css">
+    <Content Include="Resources\theme\default\css\main.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\alien1.gif">
+    <Content Include="Resources\theme\default\images\alien1.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\alien2.gif">
+    <Content Include="Resources\theme\default\images\alien2.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\alien3.gif">
+    <Content Include="Resources\theme\default\images\alien3.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\boxing-preview.png">
+    <Content Include="Resources\theme\default\images\boxing-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\donkeykong-preview.png">
+    <Content Include="Resources\theme\default\images\donkeykong-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\frogger-preview.png">
+    <Content Include="Resources\theme\default\images\frogger-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\galaga-preview.png">
+    <Content Include="Resources\theme\default\images\galaga-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\galaxian-preview.png">
+    <Content Include="Resources\theme\default\images\galaxian-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\gyruss-preview.png">
+    <Content Include="Resources\theme\default\images\gyruss-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\joust-preview.png">
+    <Content Include="Resources\theme\default\images\joust-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\joust-preview2.png">
+    <Content Include="Resources\theme\default\images\joust-preview2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\markcade.png">
+    <Content Include="Resources\theme\default\images\markcade.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\moonpatrol-preview.png">
+    <Content Include="Resources\theme\default\images\moonpatrol-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\mspacman-preview.png">
+    <Content Include="Resources\theme\default\images\mspacman-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\pacman-preview.png">
+    <Content Include="Resources\theme\default\images\pacman-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\power.png">
+    <Content Include="Resources\theme\default\images\power.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\preview-frame.png">
+    <Content Include="Resources\theme\default\images\preview-frame.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\punchout-preview.png">
+    <Content Include="Resources\theme\default\images\punchout-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\riverraid-preview.png">
+    <Content Include="Resources\theme\default\images\riverraid-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\selected-game.png">
+    <Content Include="Resources\theme\default\images\selected-game.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\spaceinvaders-preview.png">
+    <Content Include="Resources\theme\default\images\spaceinvaders-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\spyhunter-preview.png">
+    <Content Include="Resources\theme\default\images\spyhunter-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\tapper-preview.png">
+    <Content Include="Resources\theme\default\images\tapper-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\timepilot-preview.png">
+    <Content Include="Resources\theme\default\images\timepilot-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\images\unsquad-preview.png">
+    <Content Include="Resources\theme\default\images\unsquad-preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\config\games.js">
+    <Content Include="Resources\theme\default\config\games.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\js\jquery-2.2.1.min.js">
@@ -181,16 +181,16 @@
     <Content Include="Resources\js\main.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\sounds\poka01.mp3">
+    <Content Include="Resources\theme\default\sounds\poka01.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\sounds\powerup05.mp3">
+    <Content Include="Resources\theme\default\sounds\powerup05.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\sounds\SourceSounds.txt">
+    <Content Include="Resources\theme\default\sounds\SourceSounds.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\UI\default\template-main.html">
+    <Content Include="Resources\theme\default\template-main.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
