@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using SlimDX.DirectInput;
+﻿using SlimDX.DirectInput;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
