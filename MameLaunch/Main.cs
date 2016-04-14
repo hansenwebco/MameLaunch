@@ -19,6 +19,7 @@ namespace MameLaunch
         // SlimDX Tutorial: https://www.youtube.com/watch?v=rtnLGfAj7W0
 
         private bool _skipOnce = false;
+        private bool _stickMoved = false;
         DirectInput input = new DirectInput();
         SlimDX.DirectInput.Joystick stick;
         Joystick[] sticks;
@@ -35,7 +36,7 @@ namespace MameLaunch
 
             string curDir = Directory.GetCurrentDirectory();
             string templatePath = System.Configuration.ConfigurationManager.AppSettings["SkinRootPage"].ToString();
-            wb.Url = new Uri(String.Format("file:///{0}/resources/" + templatePath , curDir));
+            wb.Url = new Uri(String.Format("file:///{0}/resources/" + templatePath, curDir));
 
             wb.PreviewKeyDown += new PreviewKeyDownEventHandler(wb_PreviewKeyDown);
 
@@ -130,12 +131,20 @@ namespace MameLaunch
 
             if (id == 0)
             {
+                if (yValue > -20 && yValue < 20)
+                    _stickMoved = false;
 
-                if (yValue < -1)
+                if (yValue < -40 && wb.Focused && !_stickMoved)
+                {
                     wb.Document.GetElementById("btn-up").InvokeMember("click");
+                    _stickMoved = true;
+                }
 
-                if (yValue > 0)
+                if (yValue > 40 && wb.Focused && !_stickMoved)
+                {
                     wb.Document.GetElementById("btn-down").InvokeMember("click");
+                    _stickMoved = true;
+                }
 
                 if (buttons[0])
                 {
