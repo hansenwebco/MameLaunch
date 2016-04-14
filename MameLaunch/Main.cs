@@ -19,7 +19,7 @@ namespace MameLaunch
         // SlimDX Tutorial: https://www.youtube.com/watch?v=rtnLGfAj7W0
 
         private bool _skipOnce = false;
-        private bool _stickMoved = false;
+        private DateTime _stickMoved = DateTime.Now;
         DirectInput input = new DirectInput();
         SlimDX.DirectInput.Joystick stick;
         Joystick[] sticks;
@@ -131,19 +131,20 @@ namespace MameLaunch
 
             if (id == 0)
             {
-                if (yValue > -20 && yValue < 20)
-                    _stickMoved = false;
 
-                if (yValue < -40 && wb.Focused && !_stickMoved)
+                TimeSpan lastMoveTimeSpan = DateTime.Now - _stickMoved;
+                int timeSinceLastMove = (int)lastMoveTimeSpan.TotalMilliseconds;
+                
+                if (yValue < -50 && wb.Focused && timeSinceLastMove > 200 )
                 {
                     wb.Document.GetElementById("btn-up").InvokeMember("click");
-                    _stickMoved = true;
+                    _stickMoved = DateTime.Now;
                 }
 
-                if (yValue > 40 && wb.Focused && !_stickMoved)
+                if (yValue > 50 && wb.Focused && timeSinceLastMove > 200 )
                 {
                     wb.Document.GetElementById("btn-down").InvokeMember("click");
-                    _stickMoved = true;
+                    _stickMoved = DateTime.Now;
                 }
 
                 if (buttons[0])
