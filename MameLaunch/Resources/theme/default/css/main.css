@@ -3,6 +3,11 @@
     src: url('../fonts/mincraft.ttf'); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'pressstart-e'; /*a name to be used later*/
+    src: url('../fonts/PressStart2P.ttf'); /*URL to font*/
+}
+
 body {
     padding: 50px;
     padding-top: 100px;
@@ -18,7 +23,14 @@ body {
     font-size: 14px;
 }
 
-
+#title {
+    font-family: pressstart-e;
+    font-size: 920%;
+    color: #cc9b00;
+    padding-bottom: 45px;
+    margin: 0px;
+    margin-top: -20px;
+}
 
 #gameslist {
     margin-left: 0px;
