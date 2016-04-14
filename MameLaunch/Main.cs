@@ -29,7 +29,6 @@ namespace MameLaunch
 
         public Main()
         {
-
             InitializeComponent();
 
             Cursor.Hide();
@@ -131,7 +130,6 @@ namespace MameLaunch
 
             if (id == 0)
             {
-
                 TimeSpan lastMoveTimeSpan = DateTime.Now - _stickMoved;
                 int timeSinceLastMove = (int)lastMoveTimeSpan.TotalMilliseconds;
                 
@@ -157,7 +155,6 @@ namespace MameLaunch
                     // ... handle other buttons if needed
                 }
             }
-
         }
 
         private void timerMain_Tick(object sender, EventArgs e)
